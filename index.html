@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElderGuard</title>
+  <meta name="description" content="ElderGuard is a service that helps protect seniors and their families from phone scams.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="wordmark">ElderGuard</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#who">Who It Is For</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="top" class="hero">
+    <div class="hero-bg-pattern" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-shield" aria-hidden="true">
+        <svg viewBox="0 0 120 140" width="80" height="94" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M60 4 L108 22 V68 C108 100 86 124 60 136 C34 124 12 100 12 68 V22 Z" />
+          <path d="M60 22 L92 34 V66 C92 88 78 106 60 116 C42 106 28 88 28 66 V34 Z" opacity="0.5" />
+          <circle cx="60" cy="68" r="14" opacity="0.6" />
+        </svg>
+      </div>
+      <h1>Protecting our elders from scams.</h1>
+      <p class="hero-sub">ElderGuard listens to phone calls and warns you when something sounds like a scam. It is built to give families peace of mind.</p>
+      <div class="coming-soon-badge">
+        <span class="dot"></span> Coming Soon
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M12 4 V20 M6 14 L12 20 L18 14" />
+      </svg>
+    </div>
+  </header>
+
+  <!-- Geometric divider -->
+  <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 30" width="100%" height="30" preserveAspectRatio="xMidYMid meet">
+      <g fill="var(--turquoise)">
+        <polygon points="0,15 20,5 40,15 20,25" />
+        <polygon points="50,15 70,5 90,15 70,25" />
+      </g>
+      <g fill="var(--burgundy)">
+        <polygon points="100,15 120,5 140,15 120,25" />
+        <polygon points="150,15 170,5 190,15 170,25" />
+      </g>
+      <g fill="var(--brown)">
+        <polygon points="200,15 220,5 240,15 220,25" />
+        <polygon points="250,15 270,5 290,15 270,25" />
+      </g>
+      <g fill="var(--turquoise)">
+        <polygon points="300,15 320,5 340,15 320,25" />
+        <polygon points="350,15 370,5 390,15 370,25" />
+      </g>
+      <g fill="var(--burgundy)">
+        <polygon points="400,15 420,5 440,15 420,25" />
+        <polygon points="450,15 470,5 490,15 470,25" />
+      </g>
+      <g fill="var(--brown)">
+        <polygon points="500,15 520,5 540,15 520,25" />
+        <polygon points="550,15 570,5 590,15 570,25" />
+      </g>
+      <g fill="var(--turquoise)">
+        <polygon points="600,15 620,5 640,15 620,25" />
+        <polygon points="650,15 670,5 690,15 670,25" />
+      </g>
+      <g fill="var(--burgundy)">
+        <polygon points="700,15 720,5 740,15 720,25" />
+        <polygon points="750,15 770,5 790,15 770,25" />
+      </g>
+      <g fill="var(--brown)">
+        <polygon points="800,15 820,5 840,15 820,25" />
+        <polygon points="850,15 870,5 890,15 870,25" />
+      </g>
+      <g fill="var(--turquoise)">
+        <polygon points="900,15 920,5 940,15 920,25" />
+        <polygon points="950,15 970,5 990,15 970,25" />
+      </g>
+      <g fill="var(--burgundy)">
+        <polygon points="1000,15 1020,5 1040,15 1020,25" />
+        <polygon points="1050,15 1070,5 1090,15 1070,25" />
+      </g>
+      <g fill="var(--brown)">
+        <polygon points="1100,15 1120,5 1140,15 1120,25" />
+        <polygon points="1150,15 1170,5 1190,15 1170,25" />
+      </g>
+    </svg>
+  </div>
+
+  <!-- How It Works -->
+  <section id="how" class="section">
+    <div class="container">
+      <h2>How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M8 10 C8 8 10 6 12 6 L16 6 L18 12 L15 14 C17 20 22 25 28 27 L30 24 L36 26 L36 30 C36 32 34 34 32 34 C20 34 8 22 8 10 Z" />
+            </svg>
+          </div>
+          <h3>Listens to Calls</h3>
+          <p>ElderGuard pays attention to phone calls as they happen. It listens for the words and patterns that scammers use over and over.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="24" cy="24" r="18" />
+              <path d="M24 14 V24 L32 28" />
+            </svg>
+          </div>
+          <h3>Checks for Danger</h3>
+          <p>When a call sounds like a scam, ElderGuard sends a warning right away. It looks for common tricks like fake prizes, urgent payment demands, and people pretending to be someone they are not.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M24 6 L40 12 V24 C40 34 32 40 24 42 C16 40 8 34 8 24 V12 Z" />
+              <path d="M18 24 L22 28 L30 20" />
+            </svg>
+          </div>
+          <h3>Protects Your Family</h3>
+          <p>You get an alert when a call seems dangerous. That way you can step in, talk to your loved one, and help before any harm is done.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who It Is For -->
+  <section id="who" class="section alt-bg">
+    <div class="container">
+      <h2>Who It Is For</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card-pattern" aria-hidden="true">
+            <svg viewBox="0 0 100 100" width="100%" height="100%" preserveAspectRatio="none">
+              <g fill="none" stroke="var(--turquoise)" stroke-width="1.5" opacity="0.4">
+                <rect x="20" y="20" width="60" height="60" />
+                <rect x="30" y="30" width="40" height="40" />
+                <rect x="40" y="40" width="20" height="20" />
+                <line x1="0" y1="50" x2="20" y2="50" />
+                <line x1="80" y1="50" x2="100" y2="50" />
+                <line x1="50" y1="0" x2="50" y2="20" />
+                <line x1="50" y1="80" x2="50" y2="100" />
+              </g>
+            </svg>
+          </div>
+          <h3>For Elders</h3>
+          <p>If you are a senior who gets a lot of scam calls, ElderGuard watches out for you. It is simple to set up and works quietly in the background. You do not need to be good with technology.</p>
+        </div>
+        <div class="card">
+          <div class="card-pattern" aria-hidden="true">
+            <svg viewBox="0 0 100 100" width="100%" height="100%" preserveAspectRatio="none">
+              <g fill="none" stroke="var(--burgundy)" stroke-width="1.5" opacity="0.4">
+                <polygon points="50,15 75,35 65,35 65,85 35,85 35,35 25,35" />
+                <polygon points="50,25 68,40 60,40 60,75 40,75 40,40 32,40" />
+              </g>
+            </svg>
+          </div>
+          <h3>For Families</h3>
+          <p>If you worry about a parent or grandparent getting scammed, ElderGuard gives you a way to know when something is wrong. You get alerts so you can help before it is too late.</p>
+        </div>
+        <div class="card">
+          <div class="card-pattern" aria-hidden="true">
+            <svg viewBox="0 0 100 100" width="100%" height="100%" preserveAspectRatio="none">
+              <g fill="none" stroke="var(--brown)" stroke-width="1.5" opacity="0.4">
+                <circle cx="50" cy="50" r="35" />
+                <circle cx="50" cy="50" r="25" />
+                <circle cx="50" cy="50" r="15" />
+                <line x1="50" y1="5" x2="50" y2="20" />
+                <line x1="50" y1="80" x2="50" y2="95" />
+                <line x1="5" y1="50" x2="20" y2="50" />
+                <line x1="80" y1="50" x2="95" y2="50" />
+              </g>
+            </svg>
+          </div>
+          <h3>For Anyone Who Is Worried</h3>
+          <p>Scams do not only target seniors. If you or someone you know has been getting suspicious calls, ElderGuard can help you feel safer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container narrow">
+      <h2>About</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>ElderGuard started with a simple idea: our elders deserve to feel safe when they answer the phone.</p>
+          <p>I am Navajo, and in my culture, elders are the ones we turn to for guidance and wisdom. They took care of us. Now it is our turn to take care of them. Scams target older people more than anyone else, and too many families have watched someone they love get taken advantage of. That should not happen.</p>
+          <p>So I built ElderGuard. It listens to calls, spots the tricks scammers use, and warns you and your family before any damage is done. It is not complicated. It is just looking out for the people who looked out for us.</p>
+        </div>
+        <div class="about-pattern" aria-hidden="true">
+          <svg viewBox="0 0 200 200" width="100%" height="100%">
+            <g fill="none" stroke-width="2">
+              <rect x="20" y="20" width="160" height="160" stroke="var(--turquoise)" opacity="0.6" />
+              <rect x="35" y="35" width="130" height="130" stroke="var(--burgundy)" opacity="0.5" />
+              <rect x="50" y="50" width="100" height="100" stroke="var(--brown)" opacity="0.4" />
+              <rect x="65" y="65" width="70" height="70" stroke="var(--turquoise)" opacity="0.3" />
+              <rect x="80" y="80" width="40" height="40" stroke="var(--burgundy)" opacity="0.2" />
+              <line x1="100" y1="0" x2="100" y2="200" stroke="var(--brown)" opacity="0.15" />
+              <line x1="0" y1="100" x2="200" y2="100" stroke="var(--brown)" opacity="0.15" />
+              <polygon points="100,10 110,20 100,30 90,20" fill="var(--turquoise)" opacity="0.5" />
+              <polygon points="100,170 110,180 100,190 90,180" fill="var(--turquoise)" opacity="0.5" />
+              <polygon points="10,100 20,110 30,100 20,90" fill="var(--burgundy)" opacity="0.5" />
+              <polygon points="170,100 180,110 190,100 180,90" fill="var(--burgundy)" opacity="0.5" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coming Soon -->
+  <section class="coming-soon">
+    <div class="container narrow center">
+      <div class="coming-soon-pattern" aria-hidden="true">
+        <svg viewBox="0 0 1200 20" width="100%" height="20" preserveAspectRatio="xMidYMid meet">
+          <g fill="var(--cream)">
+            <polygon points="0,10 15,2 30,10 15,18" />
+            <polygon points="40,10 55,2 70,10 55,18" />
+            <polygon points="80,10 95,2 110,10 95,18" />
+            <polygon points="120,10 135,2 150,10 135,18" />
+            <polygon points="160,10 175,2 190,10 175,18" />
+            <polygon points="200,10 215,2 230,10 215,18" />
+            <polygon points="240,10 255,2 270,10 255,18" />
+            <polygon points="280,10 295,2 310,10 295,18" />
+            <polygon points="320,10 335,2 350,10 335,18" />
+            <polygon points="360,10 375,2 390,10 375,18" />
+            <polygon points="400,10 415,2 430,10 415,18" />
+            <polygon points="440,10 455,2 470,10 455,18" />
+            <polygon points="480,10 495,2 510,10 495,18" />
+            <polygon points="520,10 535,2 550,10 535,18" />
+            <polygon points="560,10 575,2 590,10 575,18" />
+            <polygon points="600,10 615,2 630,10 615,18" />
+            <polygon points="640,10 655,2 670,10 655,18" />
+            <polygon points="680,10 695,2 710,10 695,18" />
+            <polygon points="720,10 735,2 750,10 735,18" />
+            <polygon points="760,10 775,2 790,10 775,18" />
+            <polygon points="800,10 815,2 830,10 815,18" />
+            <polygon points="840,10 855,2 870,10 855,18" />
+            <polygon points="880,10 895,2 910,10 895,18" />
+            <polygon points="920,10 935,2 950,10 935,18" />
+            <polygon points="960,10 975,2 990,10 975,18" />
+            <polygon points="1000,10 1015,2 1030,10 1015,18" />
+            <polygon points="1040,10 1055,2 1070,10 1055,18" />
+            <polygon points="1080,10 1095,2 1110,10 1095,18" />
+            <polygon points="1120,10 1135,2 1150,10 1135,18" />
+            <polygon points="1160,10 1175,2 1190,10 1175,18" />
+          </g>
+        </svg>
+      </div>
+      <h2>In Development</h2>
+      <p class="coming-soon-text">We are building ElderGuard right now. The app is not ready yet, but we are working hard to get it to you. If you want to know when it is available, we will share updates as we get closer.</p>
+      <p class="coming-soon-text"><strong>Taking beta requests soon.</strong></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="wordmark small">ElderGuard</span>
+          <p>Protecting our elders from scams.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#how">How It Works</a>
+          <a href="#who">Who It Is For</a>
+          <a href="#about">About</a>
+        </div>
+      </div>
+      <div class="footer-pattern" aria-hidden="true">
+        <svg viewBox="0 0 1200 12" width="100%" height="12" preserveAspectRatio="xMidYMid meet">
+          <g fill="var(--turquoise)" opacity="0.5">
+            <polygon points="0,6 10,1 20,6 10,11" />
+            <polygon points="30,6 40,1 50,6 40,11" />
+            <polygon points="60,6 70,1 80,6 70,11" />
+            <polygon points="90,6 100,1 110,6 100,11" />
+            <polygon points="120,6 130,1 140,6 130,11" />
+            <polygon points="150,6 160,1 170,6 160,11" />
+            <polygon points="180,6 190,1 200,6 190,11" />
+            <polygon points="210,6 220,1 230,6 220,11" />
+            <polygon points="240,6 250,1 260,6 250,11" />
+            <polygon points="270,6 280,1 290,6 280,11" />
+            <polygon points="300,6 310,1 320,6 310,11" />
+            <polygon points="330,6 340,1 350,6 340,11" />
+            <polygon points="360,6 370,1 380,6 370,11" />
+            <polygon points="390,6 400,1 410,6 400,11" />
+            <polygon points="420,6 430,1 440,6 430,11" />
+            <polygon points="450,6 460,1 470,6 460,11" />
+            <polygon points="480,6 490,1 500,6 490,11" />
+            <polygon points="510,6 520,1 530,6 520,11" />
+            <polygon points="540,6 550,1 560,6 550,11" />
+            <polygon points="570,6 580,1 590,6 580,11" />
+            <polygon points="600,6 610,1 620,6 610,11" />
+            <polygon points="630,6 640,1 650,6 640,11" />
+            <polygon points="660,6 670,1 680,6 670,11" />
+            <polygon points="690,6 700,1 710,6 700,11" />
+            <polygon points="720,6 730,1 740,6 730,11" />
+            <polygon points="750,6 760,1 770,6 760,11" />
+            <polygon points="780,6 790,1 800,6 790,11" />
+            <polygon points="810,6 820,1 830,6 820,11" />
+            <polygon points="840,6 850,1 860,6 850,11" />
+            <polygon points="870,6 880,1 890,6 880,11" />
+            <polygon points="900,6 910,1 920,6 910,11" />
+            <polygon points="930,6 940,1 950,6 940,11" />
+            <polygon points="960,6 970,1 980,6 970,11" />
+            <polygon points="990,6 1000,1 1010,6 1000,11" />
+            <polygon points="1020,6 1030,1 1040,6 1030,11" />
+            <polygon points="1050,6 1060,1 1070,6 1060,11" />
+            <polygon points="1080,6 1090,1 1100,6 1090,11" />
+            <polygon points="1110,6 1120,1 1130,6 1120,11" />
+            <polygon points="1140,6 1150,1 1160,6 1150,11" />
+            <polygon points="1170,6 1180,1 1190,6 1180,11" />
+          </g>
+        </svg>
+      </div>
+      <p class="copyright">&copy; 2026 ElderGuard. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
